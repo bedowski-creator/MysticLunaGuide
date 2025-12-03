@@ -1,89 +1,129 @@
-/* Global reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Page layout */
+/* Background */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    max-width: 900px;
+    max-width: 920px;
     margin: auto;
-    padding: 30px 20px;
-    background: linear-gradient(180deg, #fafaff, #f4f6ff);
+    padding: 30px 22px;
+
+    background: linear-gradient(
+        180deg,
+        #fafaff 0%,
+        #f7f3ff 30%,
+        #f0f4ff 100%
+    );
+
     color: #333;
 }
 
-/* Header */
+/* Brand header */
 header a {
     text-decoration: none;
-    color: #5a60d4;
-    font-size: 22px;
+    color: #6d6ae8;
+    font-size: 26px;
     font-weight: bold;
 }
 
-h1 {
-    margin-top: 20px;
-    font-size: 32px;
-    color: #222;
+header a:hover {
+    color: #4f4bd4;
 }
 
+/* Page title */
+h1 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #6f6be9, #a36ee9);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Subtitle */
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Navigation */
 nav {
-    margin: 15px 0;
+    margin: 15px 0 25px 0;
     font-size: 16px;
 }
 
 nav a {
-    color: #444;
+    color: #6d6ae8;
     text-decoration: none;
-    margin-right: 10px;
+    padding: 0 6px;
 }
 
 nav a:hover {
-    color: #222;
+    color: #a56cec;
 }
 
-/* Search box */
+/* Search */
 .search-box input {
     margin: 12px 0 20px 0;
-    padding: 8px 12px;
+    padding: 10px 14px;
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 1px solid #d7d1ff;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(150, 130, 255, 0.12);
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #a59cff;
 }
 
 /* Section headers */
 h2 {
-    margin-top: 25px;
+    margin-top: 40px;
     margin-bottom: 12px;
-    font-size: 26px;
-    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    color: #4f4bd4;
 }
 
-/* Article lists */
+/* Lists */
 ul {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    padding-left: 20px;
 }
 
 li {
-    margin: 3px 0;
+    margin: 6px 0;
+    font-size: 18px;
 }
 
 a {
-    color: #3a3ecf;
+    color: #5f55e6;
 }
 
 a:hover {
+    color: #a56cec;
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 60px;
+    padding-top: 25px;
     border-top: 1px solid #ddd;
     text-align: center;
     font-size: 14px;
     color: #666;
 }
+
+footer a {
+    color: #6d6ae8;
+}
+
