@@ -41,13 +41,16 @@ body {
 
 .brand-name {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 800; /* was 700 */
+    color: #201642; /* deeper purple */
+    letter-spacing: -0.5px;
 }
 
 .brand-tagline {
     font-size: 12px;
-    letter-spacing: 1.2px;
-    opacity: 0.8;
+    font-weight: 600;
+    color: #514789;
+    opacity: 0.9;
 }
 
 /* NAV */
@@ -73,6 +76,14 @@ body {
 
 .hero-title span {
     color: #6a4dcf;
+}
+
+.article-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1a1240;
+    margin-bottom: 20px;
+    letter-spacing: -0.4px;
 }
 
 /* HIGHLIGHT INTRO */
@@ -102,13 +113,15 @@ body {
 }
 
 .article-content h2 {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.07);
     font-size: 26px;
     margin-top: 40px;
     margin-bottom: 12px;
-    font-weight: 600;
-    color: #2c2357;
+    font-weight: 700;     /* was 600 */
+    color: #1d1538;       /* darker, cleaner */
     letter-spacing: -0.3px;
 }
+
 
 .article-block {
     margin-bottom: 32px;
@@ -130,9 +143,10 @@ body {
 
 .sidebar-section-title {
     font-size: 14px;
-    font-weight: 700;
-    color: #6a4dcf;
-    margin-bottom: 8px;
+    font-weight: 800;
+    color: #4b2fa3; /* darker purple */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 /* RELATED LINKS */
