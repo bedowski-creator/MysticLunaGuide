@@ -1,263 +1,161 @@
-/* ---------------------------------------------------------
-   GLOBAL RESET
---------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* GLOBAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #f4edff, #ede6ff);
+    color: #2d145c;
+    line-height: 1.65;
 }
 
-html, body {
-  font-family: 'Inter', sans-serif;
-  color: #2a254a;
-  background: linear-gradient(180deg, #f7f4ff 0%, #efeaff 100%);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ---------------------------------------------------------
-   TYPOGRAPHY
---------------------------------------------------------- */
 h1, h2, h3 {
-  color: #1f144b;
-  letter-spacing: -0.4px;
-  font-weight: 800;
+    font-weight: 800;
+    color: #2d145c;
 }
 
-h1 {
-  font-size: 42px;
-  line-height: 1.2;
-  margin-bottom: 20px;
+a {
+    color: #4e36dd;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
-h1 span {
-  color: #6a44ff;
-}
-
-h2 {
-  font-size: 24px;
-  margin: 30px 0 10px;
-}
-
-p {
-  margin-bottom: 14px;
-  color: #2a254a;
-  opacity: 0.9;
-}
-
-/* ---------------------------------------------------------
-   LAYOUT WRAPPERS
---------------------------------------------------------- */
-.wrapper {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-/* ---------------------------------------------------------
-   HEADER
---------------------------------------------------------- */
+/* HEADER */
 .header {
-  padding: 18px 30px;
-  background: #ffffffaa;
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(200, 180, 255, 0.25);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 50;
+    width: 100%;
+    background: #ffffffdd;
+    border-bottom: 1px solid rgba(160,140,255,0.2);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(12px);
+    z-index: 20;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: 900;
-  text-decoration: none;
-  color: #2a254a;
+.header-inner {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header nav a {
-  margin-left: 24px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #3b3070;
-  opacity: 0.85;
+.brand-name {
+    font-size: 22px;
+    font-weight: 900;
 }
 
-.header nav a:hover {
-  opacity: 1;
+.nav a {
+    margin-left: 20px;
+    font-size: 14px;
 }
 
-/* ---------------------------------------------------------
-   HERO SECTION
---------------------------------------------------------- */
+/* UNIVERSAL CONTAINER */
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HERO SECTION */
 .hero {
-  margin-top: 30px;
+    padding: 70px 0 40px;
 }
 
-.hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 40px;
-  align-items: start;
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
 }
 
-.hero-left {
-  padding-right: 20px;
+.hero-title {
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 10px;
 }
 
-.hero-badge {
-  font-size: 13px;
-  font-weight: 700;
-  background: #ffffffdd;
-  padding: 6px 14px;
-  border-radius: 40px;
-  display: inline-block;
-  color: #6a44ff;
-  border: 1px solid #e0d7ff;
-  margin-bottom: 18px;
+.hero-subtitle {
+    max-width: 600px;
+    font-size: 16px;
+    opacity: 0.8;
 }
 
-/* Search bar + buttons */
-.hero-actions {
-  display: flex;
-  gap: 10px;
-  margin: 25px 0 18px;
-}
-
-.hero-actions input {
-  padding: 10px 15px;
-  border-radius: 999px;
-  border: 1px solid #d9d0ff;
-  width: 210px;
-}
-
-.btn-primary {
-  background: #6a44ff;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 999px;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background: #5830e0;
-}
-
-/* Category chips */
-.hero-chips {
-  margin: 18px 0;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.hero-chip {
-  background: white;
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid #e7ddff;
-  font-size: 14px;
-  color: #4a3aa7;
-  text-decoration: none;
-}
-
-.hero-chip:hover {
-  background: #f6f2ff;
-}
-
-/* Hero side card */
+/* SIDE CARD */
 .hero-side-card {
-  background: white;
-  border: 1px solid #e1d9ff;
-  border-radius: 14px;
-  padding: 20px;
-  box-shadow: 0 6px 20px rgba(150, 120, 255, 0.12);
+    background: #ffffffcc;
+    border: 1px solid rgba(180,165,255,0.5);
+    padding: 20px;
+    border-radius: 16px;
+    height: fit-content;
 }
 
-.hero-side-card .label {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  color: #6a44ff;
-  margin-bottom: 10px;
-}
-
-.hero-side-number {
-  font-size: 36px;
-  font-weight: 900;
-  color: #5830e0;
-  margin-bottom: 12px;
-}
-
-/* ---------------------------------------------------------
-   SECTIONS
---------------------------------------------------------- */
+/* HOME CATEGORY TITLES */
 .section {
-  margin-top: 80px;
+    padding: 60px 0;
 }
 
 .section-title {
-  font-size: 30px;
-  font-weight: 900;
-  margin-bottom: 6px;
+    font-size: 32px;
+    font-weight: 900;
 }
 
 .section-subtitle {
-  font-size: 15px;
-  opacity: 0.75;
-  margin-bottom: 30px;
+    opacity: 0.7;
+    margin-bottom: 20px;
 }
 
-.section ul {
-  margin: 10px 0 20px;
-  padding-left: 25px;
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.section li {
-  margin-bottom: 8px;
-  font-size: 16px;
+ul li {
+    margin: 6px 0;
 }
 
-.section li a {
-  color: #6a44ff;
-  text-decoration: none;
+/* ARTICLE PAGE */
+.article-page {
+    padding: 60px 0;
 }
 
-.section li a:hover {
-  text-decoration: underline;
+.article-page h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-/* ---------------------------------------------------------
-   SIDEBAR CARDS
---------------------------------------------------------- */
+.article-page .intro-box {
+    background: #ffffffcc;
+    border: 1px solid rgba(190,170,255,0.6);
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+/* SIDEBAR CARDS */
 .sidebar-card {
-  background: white;
-  border: 1px solid #e5dbff;
-  padding: 20px;
-  border-radius: 14px;
-  margin-bottom: 20px;
-  box-shadow: 0 6px 22px rgba(120, 100, 200, 0.10);
+    background: #ffffffcc;
+    border: 1px solid rgba(190,180,255,0.4);
+    padding: 18px;
+    border-radius: 16px;
 }
 
-.sidebar-title {
-  font-weight: 800;
-  color: #6a44ff;
-  margin-bottom: 6px;
+/* AMAZON */
+.affiliate-item {
+    margin-top: 10px;
 }
 
-/* ---------------------------------------------------------
-   FOOTER
---------------------------------------------------------- */
-.footer {
-  margin-top: 80px;
-  padding: 40px 20px;
-  border-top: 1px solid #e6dbff;
-  text-align: center;
-  font-size: 14px;
-  opacity: 0.7;
+.amazon-link {
+    background: #4e36dd;
+    color: white;
+    padding: 10px 14px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.amazon-link:hover {
+    background: #3523a8;
 }
 
