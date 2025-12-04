@@ -876,4 +876,28 @@ a:hover {
 .footer {
   margin-top: 80px;
 }
+/* ============================
+   MICRO POLISH PATCH
+   ============================ */
+
+/* More breathing room under hero chips */
+.hero-categories {
+  margin-bottom: 20px;
+}
+
+/* Softer hero side card shadow */
+.hero-side-card {
+  box-shadow: 0 14px 32px rgba(38, 18, 103, 0.14);
+}
+
+/* Softer density in the number list */
+#angel-numbers li,
+#dreams li,
+#animals li,
+#colours li,
+#signs li {
+  font-size: 14px;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
 
