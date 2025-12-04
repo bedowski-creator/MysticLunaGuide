@@ -900,4 +900,113 @@ a:hover {
   line-height: 1.45;
   margin-bottom: 6px;
 }
+/* ============================================
+   READABILITY + FONT CONTRAST IMPROVEMENTS
+   ============================================ */
+
+/* Light text (labels, subtitles, hints) – darken slightly */
+.section-subtitle,
+.hero-note,
+.hero-side-label,
+.sidebar-section-title,
+.article-highlight,
+.hero-badge,
+.promo-subtitle {
+    color: #6e6590!important;  /* stronger lilac-grey */
+}
+
+/* Light top labels */
+.hero-badge {
+    font-weight: 500;
+    color: #6c5fa0!important;
+}
+
+/* Angel number of the day title */
+.hero-side-card .hero-side-label {
+    color: #72669d!important;
+    font-weight: 600;
+}
+
+/* Improve general faint text everywhere */
+#angel-numbers .section-subtitle,
+#dreams .section-subtitle,
+#animals .section-subtitle,
+#colours .section-subtitle,
+#signs .section-subtitle {
+    color: #6a628d!important;
+}
+
+/* ============================================
+   FORCE HERO TITLE LINE BREAK ("any sign" new line)
+   ============================================ */
+.hero-title {
+    white-space: normal;
+    max-width: 480px;
+    line-height: 1.1;
+}
+
+.hero-title span {
+    display: block;  /* forces new line */
+    margin-top: 4px;
+    color: #7a62e4;
+    font-weight: 600;
+}
+
+/* ============================================
+   SUBTITLE BOX ("Pick the number…") UPGRADE
+   ============================================ */
+
+.article-highlight {
+    border-radius: 20px;
+    padding: 14px 20px;
+    border: 1px solid rgba(180, 160, 255, 0.45);
+    background: linear-gradient(to bottom right, #faf7ff, #f3f5ff);
+    font-size: 15px;
+    color: #544c73!important;
+    box-shadow: 0 6px 16px rgba(60, 40, 120, 0.05);
+    position: relative;
+}
+
+/* Left accent bar inside the highlight box */
+.article-highlight::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    bottom: 12px;
+    width: 4px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #c1b3ff, #a9c8ff);
+    opacity: 0.85;
+}
+
+/* improve subtitle spacing */
+.section .section-subtitle {
+    margin-top: -6px;
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+/* ============================================
+   SIDEBAR CARDS READABILITY
+   ============================================ */
+
+.sidebar-card {
+    color: #574f78!important;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.sidebar-card .sidebar-section-title {
+    color: #6a6290!important;
+    font-weight: 600;
+}
+
+/* ============================================
+   GENERAL TEXT BOOST (soft but readable)
+   ============================================ */
+p,
+li {
+    color: #50486f;
+}
 
