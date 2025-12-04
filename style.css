@@ -239,4 +239,72 @@ body {
 .footer-links a:hover {
     text-decoration: underline;
 }
+/* === GLOBAL VISIBILITY FIX FOR HEADERS & TITLES === */
+
+/* Top site name */
+.brand-name {
+    font-weight: 900 !important;
+    color: #1a1240 !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+/* Tiny tagline under the logo */
+.brand-tagline {
+    font-weight: 600 !important;
+    color: #4a3f85 !important;
+}
+
+/* Hero title on homepage */
+.hero-title {
+    font-weight: 900 !important;
+    color: #1a1240 !important;
+    line-height: 1.1;
+}
+
+/* "any sign" */
+.hero-title span {
+    color: #6a4dcf !important;
+    font-weight: 900;
+}
+
+/* Homepage section titles */
+.section-title {
+    font-size: 30px !important;
+    font-weight: 900 !important;
+    color: #1a1240 !important;
+    letter-spacing: -0.3px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.10);
+}
+
+/* Section subtitles */
+.section-subtitle {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #463c7a !important;
+    opacity: 0.95;
+}
+
+/* Article page title (big text at the top) */
+.article-title,
+h1 {
+    font-size: 40px !important;
+    font-weight: 900 !important;
+    color: #1a1240 !important;
+    margin-bottom: 20px;
+}
+
+/* Article headings */
+.article-content h2 {
+    font-weight: 800 !important;
+    color: #1d1538 !important;
+    font-size: 28px !important;
+}
+
+/* Improve “Quick Meaning” and sidebar titles */
+.sidebar-section-title {
+    font-weight: 900 !important;
+    color: #4b2fa3 !important;
+    letter-spacing: 0.6px;
+}
+
 
