@@ -780,4 +780,100 @@ a:hover {
     gap: var(--space-md);
   }
 }
+/* ============================
+   A.4 VISUAL POLISH PATCH
+   ============================ */
+
+/* Hero spacing */
+.hero {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 40px 50px;
+}
+
+/* Hero side card shadow tweak */
+.hero-side-card {
+  box-shadow: 0 20px 45px rgba(38, 18, 103, 0.20);
+}
+
+/* Angel Numbers LIST → clean 3-column grid */
+#angel-numbers ul {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  column-gap: 40px;
+  margin-top: 20px;
+}
+
+#angel-numbers li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* Dream, Animals, Colours, Signs: same pattern */
+#dreams ul,
+#animals ul,
+#colours ul,
+#signs ul {
+  columns: 3;
+  column-gap: 40px;
+}
+
+#dreams li,
+#animals li,
+#colours li,
+#signs li {
+  margin-bottom: 8px;
+}
+
+/* Better “highlight” look */
+.article-highlight {
+  border-radius: 16px;
+  border: 1px dashed rgba(170, 150, 255, 0.8);
+  background: linear-gradient(to bottom right, #f9f4ff, #f5faff);
+  padding: 14px 18px;
+  font-size: 14px;
+}
+
+/* Sidebar polish */
+.sidebar-card {
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  border: 1px solid rgba(235, 229, 255, 1);
+  box-shadow: 0 14px 32px rgba(35, 16, 92, 0.10);
+}
+
+/* Header size adjustment */
+.brand-name {
+  font-size: 22px;
+}
+
+.nav a {
+  font-size: 14px;
+}
+
+/* Category chips under hero */
+.hero-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.hero-chip {
+  padding: 6px 15px;
+  background: #ffffff;
+  border-radius: 999px;
+  border: 1px solid rgba(225, 215, 255, 0.9);
+  font-size: 13px;
+  color: var(--text-accent);
+}
+.hero-chip:hover {
+  background: #f7f4ff;
+}
+
+/* Better footer spacing */
+.footer {
+  margin-top: 80px;
+}
 
